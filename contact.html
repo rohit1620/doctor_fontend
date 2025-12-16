@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Swiper CSS (keep only one version if needed later) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Custom Script -->
+    <!-- <script src="/assets/js/script.js"></script> -->
+  </head>
+  <body class="bg-white">
+    <!-- Header -->
+    <div id="header"></div>
+
+    <!-- Hero Section -->
+    <section
+      class="relative h-[220px] md:h-[270px] w-full flex items-center bg-cover bg-center"
+      style="background-image: url(assets/images/Untitled\ design\ 2.png)"
+    >
+      <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+      <div class="relative z-10 px-8 md:px-16">
+        <h1 class="text-white text-4xl md:text-5xl font-bold mb-4">
+          Contact Us
+        </h1>
+        <nav
+          class="flex items-center text-white text-base font-medium space-x-2"
+        >
+          <a href="home.html" class="hover:underline">HOME</a>
+          <span>/</span>
+          <a href="/pages" class="hover:underline">PAGES</a>
+          <span>/</span>
+          <span class="text-blue-300">CONTACT</span>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Contact Info Boxes -->
+    <section class="max-w-7xl mx-auto px-4 py-10">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Address -->
+        <div class="bg-blue-50 p-6 rounded-lg flex items-center gap-4">
+          <div
+            class="flex items-center justify-center w-12 h-12 rounded-full bg-white shadow"
+          >
+            <i class="fa-solid fa-location-dot text-blue-600 text-xl"></i>
+          </div>
+          <div>
+            <p class="text-gray-500 text-sm">Address</p>
+            <h4 class="font-bold text-lg text-gray-900">
+              123 Street, New York, USA
+            </h4>
+          </div>
+        </div>
+        <!-- Phone -->
+        <div class="bg-blue-50 p-6 rounded-lg flex items-center gap-4">
+          <div
+            class="flex items-center justify-center w-12 h-12 rounded-full bg-white shadow"
+          >
+            <i class="fa-solid fa-phone text-blue-600 text-xl"></i>
+          </div>
+          <div>
+            <p class="text-gray-500 text-sm">Call Us Now</p>
+            <h4 class="font-bold text-lg text-gray-900">+012 345 6789</h4>
+          </div>
+        </div>
+        <!-- Email -->
+        <div class="bg-blue-50 p-6 rounded-lg flex items-center gap-4">
+          <div
+            class="flex items-center justify-center w-12 h-12 rounded-full bg-white shadow"
+          >
+            <i class="fa-solid fa-envelope text-blue-600 text-xl"></i>
+          </div>
+          <div>
+            <p class="text-gray-500 text-sm">Mail Us Now</p>
+            <h4 class="font-bold text-lg text-gray-900">info@example.com</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form + Map -->
+    <section class="max-w-7xl mx-auto px-4 pb-16">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <!-- Contact Form -->
+        <div class="bg-blue-50 p-8 rounded-lg">
+          <span class="px-4 py-1 border rounded-full text-gray-500 text-sm"
+            >Contact Us</span
+          >
+          <h2 class="text-3xl font-bold text-gray-900 mt-4 mb-4">
+            Have Any Query? Please Contact Us!
+          </h2>
+          <p class="text-gray-500 mb-6">
+            The contact form is currently inactive. Get a functional and working
+            contact form with Ajax &amp; PHP in a few minutes.
+            <a href="#" class="text-blue-600">Download Now</a>.
+          </p>
+
+          <form class="space-y-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <input
+                type="text"
+                placeholder="Your Name"
+                id="name"
+                class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+              <input
+                type="email"
+                placeholder="Your Email"
+                id="email"
+                class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+            </div>
+            <input
+              type="text"
+              placeholder="Subject"
+              id="subject"
+              class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            <textarea
+              placeholder="Message"
+              rows="4"
+              id="msg"
+              class="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            ></textarea>
+            <button
+              type="submit"
+              id="submit"
+              class="w-full bg-blue-600 text-white py-3 rounded-lg font-medium hover:bg-blue-700 transition"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+
+        <!-- Google Map -->
+        <div class="w-full h-[500px] rounded-lg overflow-hidden">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3578.322238043317!2d75.83056561502646!3d25.213815183891776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396f845f6f352df5%3A0x64f0a4e8a2e0d5f2!2sKota%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1670000000000!5m2!1sen!2sin"
+            class="w-full h-full border-0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+  </body>
+  <!-- <script>
+    const allow = localStorage.getItem("vik");
+    console.log("contact", allow);
+
+    if (!allow) {
+      console.log("rohit", allow);
+      window.location.href = "home.html";
+    }
+  </script> -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
+  <!-- <script>
+    AOS.init();
+  </script> -->
+  <script>
+    const myContact = async (e) => {
+      e.preventDefault();
+      let obj = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        subject: document.getElementById("subject").value,
+        msg: document.getElementById("msg").value,
+      };
+
+      let data = await fetch("https://doctor-qqp3.onrender.com/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(obj),
+      });
+
+      alert("contact form submited");
+
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("subject").value = "";
+      document.getElementById("msg").value = "";
+    };
+    document.querySelector("form").addEventListener("submit", myContact);
+  </script>
+</html>

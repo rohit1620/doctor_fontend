@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Klinik Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"
+    />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+  <body class="m-0">
+    <!-- Top Bar -->
+    <div id="header"></div>
+
+    <!-- Section with Left Static + Right Slider -->
+    <!-- Section with Left Static + Right Slider -->
+    <section class="relative w-full h-screen overflow-hidden "  data-aos="flip-left"> 
+  <!-- Background Images -->
+  <div class="absolute inset-0">
+    <img src="assets/images/3.png" class="absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-1000 hero-img">
+    <img src="assets/images/5.png" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000 hero-img">
+    <img src="assets/images/9.png" class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000 hero-img">
+  </div>
+
+  <!-- Dark Overlay -->
+  <div class="absolute inset-0 bg-black/30"></div>
+
+
+  <div class="relative z-10 flex items-center justify-center h-full text-center text-white px-6">
+    <div>
+      <h1 class="text-3xl  font-bold mb-6">   Good Health Is The Root Of All Happiness</h1>
+     
+    </div>
+  </div>
+</section>
+
+<!-- <script>
+  const heroImages = document.querySelectorAll(".hero-img");
+  let currentIndex = 0;
+
+  setInterval(() => {
+    heroImages[currentIndex].classList.remove("opacity-100");
+    heroImages[currentIndex].classList.add("opacity-0");
+
+    currentIndex = (currentIndex + 1) % heroImages.length;
+
+    heroImages[currentIndex].classList.remove("opacity-0");
+    heroImages[currentIndex].classList.add("opacity-100");
+  }, 5000); // every 5s
+</script> -->
+
+
+    <section class="py-16 px-[90px] lg:px-20 [@media(max-width:460px)]:px-2
+">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center" >
+        <!--left images-->
+        <div class="relative" >
+          <img
+            src="assets/images/Health-Web-1.jpg.webp"
+            alt="Docter"
+            class="shadow-lg w-4/5 mx-auto lg:mx-0"
+          />
+
+          <img
+            src="assets/images/Doctor_01.webp"
+            alt="doctor smiling"
+            class="max-sm:hidden shadow-lg w-[46%] absolute -bottom-[96px] -left-[68px] hoidden lg:block"
+          />
+        </div>
+
+        <!--right content-->
+        <div >
+          <span
+            class="inline-block bg-blue-50 text-blue-600 px-4 py-1 rounded-full text-sm font-medium mb-4"
+          >
+            About
+          </span>
+          <h2
+            class="text-3xl lg:text-4xl font-bold text-grey-900 loading-snug mb-4"
+          >
+            Why you should trust Us ? Get Know about US!
+          </h2>
+          <p class="text-grey-500 mb-4">
+            At Clita, we believe time is the most precious thing. Pain may
+            exist, but with the right care, it becomes a path to recovery. Every
+            patient’s journey matters, and we walk beside them with trust, love,
+            and dedication.
+          </p>
+
+          <p class="text-grey-500 mb-6">
+            At Clita, we believe that pain is real, but so is healing. With
+            care, love, and dedication, even the toughest challenges can be
+            transformed into strength. Every patient’s journey matters, and we
+            stand beside them with trust and compassion
+          </p>
+          <!--Fretures-->
+          <ul class="space-y-3 mb-6">
+            <li class="flex items-center text-grey-700">
+              <span class="text-blue-600 mr-3">✔</span>Quality health Care
+            </li>
+            <li class="flex items-center text-grey-700">
+              <span class="text-blue-600 mr-3">✔</span> Only Qualified Doctor
+            </li>
+            <li class="flex items-center text-grey-700">
+              <span class="text-blue-700">✔</span>Medical Research Professionals
+            </li>
+          </ul>
+
+          <!--button-->
+          <a
+            href="#"
+            class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full shadow-md transition"
+            >Read More</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!--container section-->
+
+    <section class="py-16">
+      <div class="container mx-auto px-6 lg:px-[125px]" >
+        <!--container header-->
+        <div class="text-center mb-12" data-aos="zoom-in-down">
+          <span class="px-4 py-1 border rounded-full text-grey-600 text-sm"
+            >services</span>
+
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-4">
+            Health Care Solutions
+          </h2>
+        </div>
+
+        <!--container card grid-->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!--card-->
+
+          <div class="bg-blue-50 rounded-x1 p-8 shadow-sm transform transition duration-300 hover:translate-y-2 hover:shadow-lg group" >
+            <div
+              class="w-16 h-16 flex items-center justify-center bg-white rounded-full mb-6"  >
+              <img src="assets/images/brain-idea-mind-svgrepo-com.svg" alt="svg">
+            <!-- <i class="fa-solid fa-heart-circle-plus"></i> -->
+            </div>
+            <h3 class="text-x1 font-semibold mb-3">Orthopedic</h3>
+            <p class="text-grey-500 mb-6">
+            Deals with bones, joints, muscles, ligaments, and recovery after fractures or surgeries, improving mobility, strength, posture, flexibility, and overall well-being.
+            </p>
+
+            <!--buttom expands onhover-->
+            <button class="flex items-center gap-2 px-4 py-2 rounded-full bg-white text-blue-600 shadow transition-all duration-300 w-10 overflow-hidden group-hover:w-32">
+              <i class="fa-solid fa-plus"></i>
+              <span
+                class="whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >Read More</span >
+            </button>
+          </div>
+
+          <!--Duplicate this card for others-->
+          <div class="bg-blue-50 rounded-x1 p-8 shadow-sm transform transition duration-300 hover:translate-y-2 hover:shadow-lg group">
+        <div class="w-16 h-16 flex items-center justify-center bg-white rounded-full mb-6">
+          <img src="assets/images/i-respiratory-svgrepo-com.svg" alt="Pulmonary" class="w-10 h-10" >
+        </div>
+      
+        <h3 class="text-x1 font-semibold mb-3">Neurological</h3>
+        <p class="text-grey-500 mb-6">Helps patients with stroke, spinal cord injury, Parkinson’s, multiple sclerosis, etc., by restoring movement, reducing pain, improving strength, balance, and independence.</p>
+
+          <!--buttom expands onhover-->
+            <button class="flex items-center gap-2 px-4 py-2 rounded-full bg-white text-blue-600 shadow transition-all duration-300 w-10 overflow-hidden group-hover:w-32">
+              <i class="fa-solid fa-plus"></i>
+              <span
+                class="whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >Read More</span >
+            </button>
+      </div>
+
+      <!--third card -->
+    <div class="bg-blue-50 rounded-x1 p-8 shadow-sm transform transition duration-300 hover:translate-y-2 hover:shadow-lg group">
+      <div class="w-16 h-16 flex items-center justify-center bg-white rounded-full mb-6">
+        <img src="assets/images/cardiology-svgrepo-com.svg" alt="bain svg image" class="w-12 h-12" >
+
+      </div>
+      <h3 class="text-x1 font-semibold mb-3">Cardiopulmonary</h3>
+      <p class="text-grey-500 mb-6">Focuses on heart and lung conditions like asthma, COPD, post-heart surgery recovery, improving breathing capacity, endurance, circulation, fitness, and overall quality of life.</p>
+
+        <!--buttom expands onhover-->
+            <button class="flex items-center gap-2 px-4 py-2 rounded-full bg-white text-blue-600 shadow transition-all duration-300 w-10 overflow-hidden group-hover:w-32">
+              <i class="fa-solid fa-plus"></i>
+              <span
+                class="whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >Read More</span >
+            </button>
+    </div>
+
+
+     <!--this is 4  card -->
+    <div class="bg-blue-50 rounded-x1 p-8 shadow-sm transform transition duration-300 hover:translate-y-2 hover:shadow-lg group">
+      <div class="w-16 h-16 flex items-center justify-center bg-white rounded-full mb-6">
+       <img src="assets/images/Untitled design 41.png" alt="svg" class="rounded-full " >
+
+
+      </div>
+      <h3 class="text-x1 font-semibold mb-3">Pediatric</h3>
+      <p class="text-grey-500 mb-6">For children with developmental delays, cerebral palsy, or muscular problems, enhancing coordination, posture, strength, motor skills, confidence, and overall functional independence.</p>
+
+        <!--buttom expands onhover-->
+            <button class="flex items-center gap-2 px-4 py-2 rounded-full bg-white text-blue-600 shadow transition-all duration-300 w-10 overflow-hidden group-hover:w-32">
+              <i class="fa-solid fa-plus"></i>
+              <span
+                class="whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >Read More</span >
+            </button>
+    </div>
+
+     <!--third is 5 card -->
+    <div class="bg-blue-50 rounded-x1 p-8 shadow-sm transform transition duration-300 hover:translate-y-2 hover:shadow-lg group">
+      <div class="w-16 h-16 flex items-center justify-center bg-white rounded-full mb-6">
+<img src="assets/images/old-man-svgrepo-com.svg" alt="svg" class="rounded-full">
+      </div>
+      <h3 class="text-x1 font-semibold mb-3">Geriatric</h3>
+      <p class="text-grey-500 mb-6">Supports elderly patients with arthritis, balance issues, osteoporosis, and age-related problems, improving mobility, reducing pain, preventing falls, increasing independence, and enhancing daily living.</p>
+
+        <!--buttom expands onhover-->
+            <button class="flex items-center gap-2 px-4 py-2 rounded-full bg-white text-blue-600 shadow transition-all duration-300 w-10 overflow-hidden group-hover:w-32">
+              <i class="fa-solid fa-plus"></i>
+              <span
+                class="whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >Read More</span >
+            </button>
+    </div>
+    
+
+      <!--card is 6 card -->
+    <div class="bg-blue-50 rounded-x1 p-8 shadow-sm transform transition duration-300 hover:translate-y-2 hover:shadow-lg group">
+      <div class="w-16 h-16 flex items-center justify-center bg-white rounded-full mb-6">
+    <img src="assets/images/sports-mode-svgrepo-com.svg " alt="" class="w-12 h-12">
+      </div>
+      <h3 class="text-x1 font-semibold mb-3">Sports</h3>
+      <p class="text-grey-500 mb-6">Prevents and treats sports injuries, enhances performance, and speeds up recovery, restoring strength, flexibility, stamina, agility, confidence, and overall athletic excellence.</p>
+
+        <!--buttom expands onhover-->
+            <button class="flex items-center gap-2 px-4 py-2 rounded-full bg-white text-blue-600 shadow transition-all duration-300 w-10 overflow-hidden group-hover:w-32">
+              <i class="fa-solid fa-plus"></i>
+              <span
+                class="whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >Read More</span >
+            </button>
+    </div>
+
+    <!--7 card-->
+    <div class="bg-blue-50 rounded-x1 p-8 shadow-sm transform transition duration-300 hover:translate-y-2 hover:shadow-lg group">
+      <div class="w-16 h-16 flex items-center justify-center bg-white rounded-full mb-6">
+    <img src="assets/images/woman.png" alt="" class="rounded-full w-45 h-45">
+      </div>
+      <h3 class="text-x1 font-semibold mb-3">Women’s Health</h3>
+      <p class="text-grey-500 mb-6">Focuses on pregnancy care, postnatal recovery, pelvic floor issues, improving core strength, posture, flexibility, comfort, confidence, circulation, breathing, mobility, relaxation, and overall women’s health.</p>
+
+        <!--buttom expands onhover-->
+            <button class="flex items-center gap-2 px-4 py-2 rounded-full bg-white text-blue-600 shadow transition-all duration-300 w-10 overflow-hidden group-hover:w-32">
+              <i class="fa-solid fa-plus"></i>
+              <span
+                class="whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >Read More</span >
+            </button>
+    </div>
+
+
+    <!--card 8-->
+    <div class="bg-blue-50 rounded-x1 p-8 shadow-sm transform transition duration-300 hover:translate-y-2 hover:shadow-lg group">
+      <div class="w-16 h-16 flex items-center justify-center bg-white rounded-full mb-6">
+   <img src="assets/images/handshake.png" alt="community " class="rounded-full w-16 h-16">
+      </div>
+      <h3 class="text-x1 font-semibold mb-3">Community </h3>
+      <p class="text-grey-500 mb-6">Provides rehab and preventive care in community and rural areas, promoting awareness, accessibility, mobility, independence, strength, wellness, education, and healthier living.</p>
+
+        <!--buttom expands onhover-->
+            <button class="flex items-center gap-2 px-4 py-2 rounded-full bg-white text-blue-600 shadow transition-all duration-300 w-10 overflow-hidden group-hover:w-32">
+              <i class="fa-solid fa-plus"></i>
+              <span
+                class="whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >Read More</span >
+            </button>
+    </div>
+
+
+    <!--card 9-->
+    <div class="bg-blue-50 rounded-x1 p-8 shadow-sm transform transition duration-300 hover:translate-y-2 hover:shadow-lg group">
+      <div class="w-16 h-16 flex items-center justify-center bg-white rounded-full mb-6">
+   <img src="assets/images/rehabilitation-svgrepo-com.svg" alt="svg Rehabilitation" class="rounded-full w-14 h-14">
+      </div>
+      <h3 class="text-x1 font-semibold mb-3">Rehabilitation </h3>
+      <p class="text-grey-500 mb-6"> Restores independence after major injuries, surgeries, or chronic illnesses, improving mobility, confidence, strength, balance, function, recovery, resilience, and overall quality of life.</p>
+
+        <!--buttom expands onhover-->
+            <button class="flex items-center gap-2 px-4 py-2 rounded-full bg-white text-blue-600 shadow transition-all duration-300 w-10 overflow-hidden group-hover:w-32">
+              <i class="fa-solid fa-plus"></i>
+              <span
+                class="whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >Read More</span >
+            </button>
+    </div>
+    
+        </div>
+      </div>
+    </section>
+
+       <section class="w-full bg-blue-600 text-white ">
+  <div class="grid grid-cols-1 md:grid-cols-2 h-full" >
+    
+    <!-- Left Content -->
+    <div class="flex flex-col justify-center px-6 lg:px-20 my-2">
+      <span class="inline-block border border-white rounded-full px-5 py-1 mb-4">Features</span>
+      <h2 class="text-4xl font-bold mb-4">what is a physiotherapy</h2>
+      <p class="mb-8 leading-relaxed">
+Physiotherapy is a healthcare treatment that restores movement, relieves pain, strengthens the body, and improves quality of life naturally.      </p>
+
+      <!-- Features Grid -->
+      <div class="grid grid-cols-2 gap-6" >
+        <!-- Item 1 -->
+        <div class="flex flex-col sm:flex-row items-center sm:space-x-3 space-y-2 sm:space-y-0">
+          <div class="w-12 h-12 flex items-center justify-center rounded-full bg-white text-blue-600">
+            <i class="fa-solid fa-users transition-transform duration-300 hover:scale-125"></i>
+          </div>
+          <div>
+            <p class="text-sm">Experience</p>
+            <h4 class="font-bold">Doctors</h4>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="flex flex-col sm:flex-row items-center sm:space-x-3 space-y-2 sm:space-y-0">
+          <div class="w-12 h-12 flex items-center justify-center rounded-full bg-white text-blue-600">
+            <i class="fa-solid fa-check transition-transform duration-300 hover:scale-125"></i>
+          </div>
+          <div>
+            <p class="text-sm">Quality</p>
+            <h4 class="font-bold">Services</h4>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="flex flex-col sm:flex-row items-center sm:space-x-3 space-y-2 sm:space-y-0">
+          <div class="w-12 h-12 flex items-center justify-center rounded-full bg-white text-blue-600">
+            <i class="fa-solid fa-comments transition-transform duration-300 hover:scale-125"></i>
+          </div>
+          <div>
+            <p class="text-sm">Positive</p>
+            <h4 class="font-bold">Consultation</h4>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="flex flex-col sm:flex-row items-center sm:space-x-3 space-y-2 sm:space-y-0">
+          <div class="w-12 h-12 flex items-center justify-center rounded-full bg-white text-blue-600">
+            <i class="fa-solid fa-headphones transition-transform duration-300 hover:scale-125"></i>
+          </div>
+          <div>
+            <p class="text-sm">24 Hours</p>
+            <h4 class="font-bold">Support</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Image FULL width of its column -->
+    <div class="w-full h-full" >
+      <img src="assets/images/Untitled design 4.png" 
+           alt="Doctors consultation" 
+           class="w-full h-full object-cover">
+    </div>
+  </div>
+</section>
+    
+
+<section class="w-full bg-blue-600 text-white ">
+  <div class="grid grid-cols-1 justify-items-start md:grid-cols-2 h-full ">
+
+    <!-- Right Image FULL width of its column (Now on Left) -->
+    <div class="w-full h-full order-2 md:order-1"data-aos="fade-up-right">
+      <img src="assets/images/Untitled design 5.png" 
+           alt="Doctors consultation" 
+           class="w-full h-full object-cover">
+    </div>
+
+    <!-- Left Content (Now on Right) -->
+    <div class="flex flex-col justify-center px-6 lg:px-20 order-1 md:order-2 my-2">
+      <span class="inline-block border border-white rounded-full px-5 py-1 mb-4">Features</span>
+      <h2 class="text-4xl font-bold mb-4">Why Choose Us</h2>
+      <p class="mb-8 leading-relaxed">
+               Expert physiotherapists provide personalized care, pain relief, mobility improvement, and 24/7 support, ensuring effective treatment and positive recovery experience.
+
+      </p>
+
+      <!-- Features Grid -->
+      <div class="grid grid-cols-2 gap-6">
+        <!-- Item 1 -->
+        <div class="flex flex-col sm:flex-row items-center sm:space-x-3 space-y-2 sm:space-y-0">
+          <div class="w-12 h-12 flex items-center justify-center rounded-full bg-white text-blue-600 ">
+            <i class="fa-solid fa-users transition-transform duration-300 hover:scale-125"></i>
+          </div>
+          <div>
+            <p class="text-sm">Experience</p>
+            <h4 class="font-bold">Doctors</h4>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="flex flex-col sm:flex-row items-center sm:space-x-3 space-y-2 sm:space-y-0">
+          <div class="w-12 h-12 flex items-center justify-center rounded-full bg-white text-blue-600 ">
+            <i class="fa-solid fa-check transition-transform duration-300 hover:scale-125"></i>
+          </div>
+          <div>
+            <p class="text-sm">Quality</p>
+            <h4 class="font-bold">Services</h4>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="flex flex-col sm:flex-row items-center sm:space-x-3 space-y-2 sm:space-y-0"">
+          <div class="w-12 h-12 flex items-center justify-center rounded-full bg-white text-blue-600 ">
+            <i class="fa-solid fa-comments transition-transform duration-300 hover:scale-125"></i>
+          </div>
+          <div>
+            <p class="text-sm">Positive</p>
+            <h4 class="font-bold">Consultation</h4>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="flex flex-col sm:flex-row items-center sm:space-x-3 space-y-2 sm:space-y-0">
+          <div class="w-12 h-12 flex items-center justify-center rounded-full bg-white text-blue-600 ">
+            <i class="fa-solid fa-headphones transition-transform duration-300 hover:scale-125"></i>
+          </div>
+          <div>
+            <p class="text-sm">24 Hours</p>
+            <h4 class="font-bold">Support</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class=" py-12">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col-reverse lg:flex-row items-center gap-10">
+    
+    <!-- Left Content -->
+    <div class="flex-1 text-center lg:text-left"data-aos="zoom-in">
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-4">
+        We are Ready to Help Improve Your Treatment.
+      </h2>
+      <p class="text-gray-600 mb-6">
+       At our physiotherapy center, we are dedicated to helping you move better, recover faster, and live pain-free. With over 15 years of hands-on experience, our team of expert physiotherapists combines advanced techniques with compassionate care to ensure every patient receives the best possible treatment.!
+      </p>
+
+      <!-- Bullet Points -->
+      <ul class="space-y-3 text-left">
+        <li class="flex items-start gap-2 lg:justify-start justify-center">
+          <span class="text-blue-500">✔</span>
+          <span class="text-gray-600">Refreshing to experience such personal care.</span>
+        </li>
+        <li class="flex items-start gap-2 lg:justify-start justify-center ">
+          <span class="text-blue-500">✔</span>
+          <span class="text-gray-600">We ensure comfort and safety throughout your treatment.</span>
+        </li>
+        <li class="flex items-start gap-2 lg:justify-start justify-cent
+       ">
+          <span class="text-blue-500">✔</span>
+          <span class="text-gray-600">Focused on lasting relief and overall well-being.</span>
+        </li>
+      </ul>
+
+      <!-- Button -->
+      <div class="mt-8">
+        <a href="#"
+           class="bg-blue-600 text-white font-semibold px-6 py-3 rounded-full shadow-md hover:bg-blue-700 transition">
+          Discover More
+        </a>
+      </div>
+    </div>
+
+    <!-- Right Image -->
+    <div class="flex-1 relative flex justify-center lg:justify-end" data-aos="flip-right">
+      <div class="relative">
+        <!-- Main Image -->
+        <img src="assets/images/Untitled design 8.png" alt="Treatment"
+             class="rounded-3xl shadow-md w-full max-w-md">
+        
+        <!-- Circle Image -->
+        <img src="assets/images/Screenshot 2025-09-11 165113.png"
+             alt="Massage"
+             class="absolute -bottom-10 -left-10 w-40 h-40 rounded-full border-4 border-white shadow-md hidden sm:block">
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+
+<section class="max-w-7xl mx-auto px-6 py-16">
+  <h2 class="text-3xl font-bold text-center mb-8 "  data-aos="fade-up"
+     data-aos-duration="3000">Testimonials</h2>
+<p class="text-3xl font-bold text-center mb-8 "  data-aos="fade-up"
+     data-aos-duration="3000">What Say Our Patients!</p>
+  <div class="relative" data-aos="flip-left">
+    <!-- Slider Wrapper -->
+    <div id="testimonialSlider" class="flex gap-6 overflow-x-hidden">
+      <!-- Card 1 -->
+      <div class="flex-shrink-0 w-full sm:w-[300px] md:w-[350px] bg-white rounded-2xl shadow-md p-6 border-t-4 border-blue-600 hover:-translate-y-1 transition">
+        <div class="text-yellow-400 text-lg mb-4">★★★★★</div>
+        <p class="text-gray-600 mb-6">
+      Friendly, attentive care from Dr. Sharma made my knee rehabilitation smooth and painless
+        </p>
+        <div class="flex items-center gap-4">
+          <img src="assets/images/images.jpg" alt="Jane Smith" class="w-12 h-12 rounded-full object-cover">
+          <div>
+            <h4 class="text-blue-700 font-semibold">Khushi sharma</h4>
+            <p class="text-gray-500 text-sm">Book Enthusiast</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="flex-shrink-0 w-full sm:w-[300px] md:w-[350px] bg-white rounded-2xl shadow-md p-6 border-t-4 border-blue-600 hover:-translate-y-1 transition">
+        <div class="text-yellow-400 text-lg mb-4">★★★★★</div>
+        <p class="text-gray-600 mb-6">
+         The therapy plan was customized perfectly, exceeding all my recovery expectations successfully.
+        </p>
+        <div class="flex items-center gap-4">
+          <img src="assets/images/face-young-handsome-indian-man_251136-20626.jpg" alt="Michael Johnson" class="w-12 h-12 rounded-full object-cover">
+          <div>
+            <h4 class="text-blue-700 font-semibold">Rohit yogi</h4>
+            <p class="text-gray-500 text-sm">Sci-Fi Blogger</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="flex-shrink-0 w-full sm:w-[300px] md:w-[350px] bg-white rounded-2xl shadow-md p-6 border-t-4 border-blue-600 hover:-translate-y-1 transition">
+        <div class="text-yellow-400 text-lg mb-4">★★★★☆</div>
+        <p class="text-gray-600 mb-6">
+         Dr. Sharma explains everything clearly, making exercises easy to follow and recovery fast
+        </p>
+        <div class="flex items-center gap-4">
+          <img src="assets/images/98cb74e8143e62d95d45c6a3941a6554.jpg" alt="Emily Davis" class="w-12 h-12 rounded-full object-cover">
+          <div>
+            <h4 class="text-blue-700 font-semibold">Nikita nagar</h4>
+            <p class="text-gray-500 text-sm">Book Club President</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="footer"></div>
+
+
+
+<script src="assets/js/script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</script>
+<!--this is a revive slider js end-->
+
+
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+    
+//     document.addEventListener("DOMContentLoaded", () => {
+//   const menuBtn = document.getElementById("menu-btn");
+//   const mobileMenu = document.getElementById("mobile-menu");
+//   menuBtn.addEventListener("click", () => {
+//     mobileMenu.classList.toggle("hidden");
+//   });
+// });
+
+    
+      
+      
+    </script>
+    <!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
+  </body>
+</html>
+

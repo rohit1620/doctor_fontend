@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="bg-white shadow-lg rounded-xl w-full max-w-md p-8">
+      <h2 class="text-3xl font-bold text-center mb-6">Register</h2>
+
+      <form id="registerForm" class="space-y-4">
+        <!-- Name -->
+        <div>
+          <label class="text-sm font-medium text-gray-600">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            required
+            placeholder="Enter your name"
+            class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500"
+          />
+        </div>
+
+        <!-- Email -->
+        <div>
+          <label class="text-sm font-medium text-gray-600">Email</label>
+          <input
+            type="email"
+            id="email"
+            required
+            placeholder="Enter your email"
+            class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500"
+          />
+        </div>
+
+        <!-- Password -->
+        <div>
+          <label class="text-sm font-medium text-gray-600">Password</label>
+          <input
+            type="password"
+            id="password"
+            required
+            placeholder="Create password"
+            class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500"
+          />
+        </div>
+
+        <!-- Confirm Password -->
+        <div>
+          <label class="text-sm font-medium text-gray-600"
+            >Confirm Password</label
+          >
+          <input
+            type="password"
+            id="confirmPassword"
+            required
+            placeholder="Confirm password"
+            class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500"
+          />
+        </div>
+
+        <!-- Error -->
+        <p id="errorMsg" class="text-red-500 text-sm hidden">
+          Passwords do not match
+        </p>
+
+        <!-- Register Button -->
+        <button
+          type="submit"
+          id="submit"
+          class="w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700 transition"
+        >
+          Register
+        </button>
+
+        <!-- Back to Login -->
+        <p class="text-center text-sm text-gray-500">
+          Already have an account?
+          <a
+            href="login.html"
+            class="text-indigo-600 font-medium hover:underline"
+          >
+            Login
+          </a>
+        </p>
+      </form>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+      document
+        .getElementById("registerForm")
+        .addEventListener("submit", async function (e) {
+          e.preventDefault();
+
+          const password = document.getElementById("password").value.trim();
+          const confirmPassword = document
+            .getElementById("confirmPassword")
+            .value.trim();
+          const errorMsg = document.getElementById("errorMsg");
+
+          // document.querySelector("form").addEventListener("submit", formData());
+
+          if (password === confirmPassword) {
+            let obj = {
+              name: document.getElementById("name").value,
+              email: document.getElementById("email").value,
+              password: document.getElementById("password").value,
+            };
+            let data = await fetch(
+              "https://doctor-qqp3.onrender.com/api/register",
+              {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify(obj),
+              }
+            );
+            alert("Registration Successful!");
+            window.location.href = "login.html";
+          } else {
+            errorMsg.classList.remove("hidden");
+          }
+        });
+    </script>
+  </body>
+</html>
